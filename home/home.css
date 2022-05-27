@@ -20,9 +20,6 @@ hr {
 
 footer{
     background-color: #FEFBF4;
-    /* justify-content: center; */
-    display: flex;
-    justify-content: space-around;
 }
 
 #home_1 {
@@ -122,27 +119,17 @@ footer{
     #info{
         display:flex;
         font-size: 11px;
-        /* position: absolute;
-        left:30%;
-        right:10%; */
 
+    }
+
+    #info p{
+        line-height: 56.4%;
     }
 
     .footerbox{
-        width:100%;
-        padding-left:13%;
+        padding-left:12%;
     }
 
-    #info h3{
-        font-weight: 800;
-    }
-
-
-    #phone-social{
-        display: inline;
-
-        
-    }
 
 
     
