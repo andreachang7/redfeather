@@ -4,6 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="/assets/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 
     <title>Red Feather Home</title>
 
@@ -12,6 +17,84 @@
     <script src="home.js" defer></script>
   </head>
   <body>
+  <!-- Top Navigation Menu -->
+    <div id="home_1" class = "home_gallery">
+      <div class="topnav" id="topnav">
+        <a href="#home" class="active"></a>
+        <div id="hamburger">
+          <a href="#news">Menu</a>
+          <a href="#contact">About</a>
+          <a href="#about">Contact</a>
+          <a href="#about">Reserve</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+          <!-- <i class="fa fa-bars"></i> -->
+          <img src="../assets/hamburger.png" id="ham_icon">
+        </a>
+      </div>
+      <div id="main_logo_holder">
+        <img src="../assets/red_feather_logo.png" width="428px" id="main_logo">
+      </div>
+      <div id="gallery_slider"></div>
+    </div>
+  
+    <!-- Introduction -->
+    <div id="home_2">
+      <h1 id="introtitle">Introduction</h1>
+      <p id="introtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+      <div id="amenities">
+        <div class="amenity">
+          <h2>Bar</h2>
+          <img src="../assets/image-2.jpg" id="bar_img" class="home_imgs">
+        </div>
 
-  </body>
+        <div class="amenity">
+          <h2>Interior</h2>
+          <img src="../assets/image-3.jpg" id="interior_img" class="home_imgs">
+        </div>
+
+        <div class="amenity">
+          <h2>Exterior</h2>
+          <img src="../assets/image-4.jpg" id="exterior_img" class="home_imgs">
+        </div>
+
+      </div>
+
+    </div>
+
+  <hr/>
+
+<footer id="foot">
+    <div id="info" class="footerbox">
+      <div id="location">
+        <h3>Location</h3>
+        <p>82 W 3rd St</p>
+        <p>New York, NY </p>
+        <p>10012</p>
+      </div>
+
+      <div id="hours" class="footerbox">
+        <h3>Hours</h3>
+        <p>Mon-Fri</p>
+        <p>11 am - 7 pm</p>
+        <p>Sat - Sun</p>
+        <p>10 am - 10 pm</p>
+      </div>
+
+      <div id="phone-social" class="footerbox">
+        <div id="phone">
+          <h3>Phone</h3>
+          <p>(123) 456-7890</p>
+        </div>
+
+        <div id="social" >
+          <h3>Scocial</h3>
+          <img src="../assets/logo.png"width="50" height="60" id="Instagram">
+          <img src="../assets/logo.png"width="50" height="60" id="TikTok">
+        </div> 
+      </div>
+    </div>
+</footer>
+
+</body>
 </html>

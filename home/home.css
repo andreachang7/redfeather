@@ -1,0 +1,148 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #BF1F2D;
+    background-color: #FEFBF4;
+    max-width: 480px;
+    margin: auto;
+    padding: 0px;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+
+hr {
+    border: 0;
+    border-top: 2px solid brown;
+  }
+
+footer{
+    background-color: #FEFBF4;
+    /* justify-content: center; */
+    display: flex;
+    justify-content: space-around;
+}
+
+#home_1 {
+    background-image:url('../assets/image-1.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height:828px;
+    margin: 0px;
+    padding: 0px;
+    /* margin:-10px; */
+}
+
+.topnav {
+    overflow: hidden;
+    background-color:transparent;
+    position: relative;
+  }
+  
+    .topnav #hamburger {
+        background-color: #FEFBF4;
+        display: none;
+        height:100vh;
+    }
+    
+    .topnav a {
+        color:#BF1F2D;
+        padding: 40px 30px;
+        text-decoration: none;
+        font-size:60px;
+        display: block;
+        text-align: center;
+        font-family: 'Raleway', sans-serif;
+        font-style: normal;
+        margin-top: 10px;;
+        font-weight: 500;
+        line-height: 30px;
+    }
+    
+    .topnav a.icon {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    
+    .topnav a:hover {
+        /* background-color: #ddd; */
+        color: black;
+    }
+    
+    .active {
+        color: white;
+        height:60px;
+    }
+
+    #main_logo_holder{
+        width:100%;
+    }
+
+        #main_logo{
+            width:80%;
+            padding:10%;
+            position:absolute;
+            top:10%;
+        }
+
+    #home_2{
+        background-color: #FEFBF4;
+    }
+
+        #introtitle{
+            padding:6%;
+            text-align: center;
+        }
+
+        #introtxt{
+            padding-left:6%;
+            padding-right:3%;
+            align-items: center;
+            text-align: left;
+        }
+
+
+        #amenities{
+            align-items: center;
+        }
+        
+            .amenity{
+                text-align: center;
+            }
+
+                .home_imgs{
+                    width: 90%;
+                }
+
+    #info{
+        display:flex;
+        font-size: 11px;
+        /* position: absolute;
+        left:30%;
+        right:10%; */
+
+    }
+
+    .footerbox{
+        width:100%;
+        padding-left:13%;
+    }
+
+    #info h3{
+        font-weight: 800;
+    }
+
+
+    #phone-social{
+        display: inline;
+
+        
+    }
+
+
+    
