@@ -7,6 +7,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Raleway:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -27,9 +29,8 @@
           <a href="#about">Contact</a>
           <a href="#about">Reserve</a>
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
+        <a href="javascript:void(0);" class="icon" id="ham_icon" onclick="hamburgerToggle()">
           <!-- <i class="fa fa-bars"></i> -->
-          <img src="../assets/hamburger.png" id="ham_icon">
         </a>
       </div>
       <div id="main_logo_holder">
@@ -44,23 +45,53 @@
       <p id="introtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
       <div id="amenities">
         <div class="amenity">
-          <h2>Bar</h2>
           <img src="../assets/image-2.jpg" id="bar_img" class="home_imgs">
+          <h2>Bar</h2>
         </div>
 
         <div class="amenity">
-          <h2>Interior</h2>
           <img src="../assets/image-3.jpg" id="interior_img" class="home_imgs">
+          <h2>Interior</h2>
         </div>
 
         <div class="amenity">
-          <h2>Exterior</h2>
           <img src="../assets/image-4.jpg" id="exterior_img" class="home_imgs">
+          <h2>Exterior</h2>
         </div>
-
       </div>
-
     </div>
+  
+    <div id="summary">
+        <p id="summary-txt"><span id="rf-cursive">Red Feather</span> is a New York based restaurant, 
+          founded in 2022. Lorem ip sum dolor sit amet, conse adipiscing et. 
+          Sit vestibulum massa nibh convallis pa.
+        </p>
+    </div>
+
+    <div id="up-sec">
+      <a href="#home_1">
+        <img src="../assets/up-btn.png" id="up-btn">
+      </a>
+    </div>
+
+
+      
+      <!-- Scroll Effect -->
+      <div class="slider">
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <img src="../assets/cover-1.jpg" class="slide" />
+          <img src="../assets/cover-2.png" class="slide" />
+          <img src="../assets/cover-3.png" class="slide" />
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
+      </div>
 
   <hr/>
 
