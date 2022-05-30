@@ -26,7 +26,7 @@ footer{
 
 }
 
-#home_1 {
+/* #home_1 {
     background-image:url('../assets/cover-1.jpg');
     background-size:cover;
     background-repeat:no-repeat;
@@ -34,13 +34,13 @@ footer{
     height:828px;
     margin: 0px;
     padding: 0px;
-    /* margin:-10px; */
-}
+} */
 
 .topnav {
-    overflow: hidden;
+    /* overflow: hidden; */
     background-color:transparent;
     position: relative;
+    z-index: 2;
   }
   
     .topnav #hamburger {
@@ -98,13 +98,13 @@ footer{
     #home_2{
         background-color: #FEFBF4;
         border-radius: 54px 59px 0px 0px;
-        margin-top: -15%;
+
     }
 
         #introtitle{
             padding:6%;
             text-align: center;
-            margin-top: 0%;
+
         }
 
         #introtxt{
@@ -181,35 +181,64 @@ footer{
 
       .slider {
         width: 100%;
-        height: 100%;
+        height: 10%;
         background-color: yellow;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 0px;
-        text-align: center;
-        overflow: hidden;
+        margin-top: 0%;
+        z-index: -2;
       }
       .image-container {
-        /* max-width: 480px; */
         display:flex;
-        background-color: pink;
-        height: 100%;
+        background-color: rgb(255, 3, 45);
+        width: 1500px;
+        height:100%;
         clear: both;
         position: relative;
         -webkit-transition: left 2s;
         -moz-transition: left 2s;
         -o-transition: left 2s;
         transition: left 2s;
+        /* margin-top: 0%; */
       }
+      
       .slide {
         float: left;
         margin: 0px;
         padding: 0px;
-        width: 480px;
-        height:100%;
+        /* width: 480px;
+        height:100%; */
+        /* width:100%;
+        height:828px; */
         position: relative;
+      } 
+
+      #image-gallery-1{
+          background-image: url('../assets/cover-1.jpg');
+          background-size:cover;
+          background-repeat:no-repeat;
+          width:100%;
+          height:828px;
 
       }
+
+      #image-gallery-2{
+        background-image: url('../assets/cover-2.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:100%;
+        height:828px;
+    }
+
+    #image-gallery-3{
+        background-image: url('../assets/cover-3.png');
+        background-size:cover;
+        background-repeat:no-repeat;
+        width:100%;
+        height:828px;
+    }
+
+      
       #slide-1:target ~ .image-container {
         left: 0px;
       }
@@ -221,12 +250,13 @@ footer{
       }
       .buttons {
         position: relative;
-        top: -20%;
+        margin-top: -30%;
+        margin-bottom: 5%;
       }
       .buttons a {
         display: inline-block;
         height: 15px;
         width: 15px;
         border-radius: 50px;
-        background-color: lightgreen;
+        background-color: #FEFBF4;
       }
