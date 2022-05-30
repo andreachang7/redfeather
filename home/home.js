@@ -3,8 +3,10 @@ let logo = document.getElementById("main_logo_holder");
 let bottomfooter = document.getElementById("foot");
 let nav = document.getElementById("topnav");
 let close = document.getElementById("ham_icon");
+let gallery = document.getElementById("slider");
 let intro = document.getElementById("home_2");
-let slider = document.getElementById("gallery_slider");
+let summary = document.getElementById("section-3");
+// let slider = document.getElementById("gallery_slider");
 
 // image fade
 let slideIndex = 0;
@@ -28,7 +30,8 @@ function hamburgerToggle() {
         ham.style.display = "none";
         logo.style.display = "block";
         intro.style.display = "block";
-        slider.style.display = "block";
+        gallery.style.display = "block";
+        summary.style.display = "block";
         bottomfooter.style.display = "block";
         nav.style.backgroundColor = "transparent";
         close.style.backgroundImage = "url('../assets/hamburger.png')";
@@ -41,7 +44,8 @@ function hamburgerToggle() {
         ham.style.display = "block";
         logo.style.display = "none";
         intro.style.display = "none";
-        slider.style.display = "none";
+        gallery.style.display = "none";
+        summary.style.display = "none";
         bottomfooter.style.display = "none";
         nav.style.backgroundColor = "#FEFBF4";
         close.style.backgroundImage = "url('../assets/close.png')";
@@ -75,4 +79,3 @@ function showSlides() {
   setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
 
-//
