@@ -7,10 +7,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="contact.css">
     <script src="about.js" defer></script>
     <link rel="icon" href="assets/dot.png">
-    <title>About</title>
+    <title>Contact</title>
 </head>
 <body>
     <div id="home_1" class = "home_gallery">
@@ -18,7 +18,7 @@
           <a href="#home" class="active"></a>
           <div id="hamburger">
             <div class="menu-1"><a href="#news">Menu</a></div>
-            <div class="menu-2"><a href="#contact">About</a></div>
+            <div class="menu-2"><a href="../about/about.html">About</a></div>
             <div class="menu-3"><a href="#about">Contact</a></div>
             <div class="menu-4"><a href="#about">Reserve</a></div>
           </div>
@@ -26,6 +26,33 @@
           </a>
         </div>
     </div>
+
+
+    <div class="title-wrapper">
+      <h1 class="title">Contact Us</h1>
+      <p class="description">Feel free to contact us and we’ll get back as soon as we can. We look forward to hearing from you :)</p>
+    </div>
+
+    <div class="form-wrapper">
+      <form action="action_page.php">
+        
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" class="box fName">
+      
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" class="box lName">
+    
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" class="box email">
+        </select>
+    
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write something.." style="height:200px" class="box message"></textarea>
+    
+        <input type="submit" value="Submit" class="submit-button">
+      </form>
+    </div>
+
 </body>
 
 <hr>
@@ -33,9 +60,9 @@
 <footer id="foot">
     <div id="info" class="footerbox">
       <div id="location">
-        <h3>Location</h3>
+        <h3><a href="https://www.google.com/maps/dir/40.7633058,-73.9712484/82+W+3rd+St,+New+York,+NY+10012/@40.7461559,-74.0010818,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25991a2e3c931:0xbb0383d45867712f!2m2!1d-73.9989571!2d40.7297021" class="link-1">Location</a></h3>
         <p>82 W 3rd St</p>
-        <p>New York, NY </p>
+        <p>New York, NY</p>
         <p>10012</p>
       </div>
 
@@ -47,7 +74,7 @@
         <p>10 am - 10 pm</p>
       </div>
 
-      <div id="phone-social" class="footerbox">
+      <div id="phone" class="footerbox">
         <div id="phone">
           <h3>Phone</h3>
           <p>(123) 456-7890</p>
