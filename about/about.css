@@ -13,7 +13,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     margin-top: 3vh;
 }
 
@@ -88,50 +88,6 @@ a:active {
     line-height: 40px;
 }
 
-@media screen and (max-width: 500px) {
-    .image-1 {
-      width: 120vw;
-      transform: rotate(90deg);
-      margin-top: 18vh;
-    }
-    .header {
-        margin-top: 10vw;
-        width: 95vw;
-    }
-    .subtitle {
-        margin-top: 17vw;
-    }
-    .subOne {
-        margin-right: 55vw;
-    }
-    .header-2 {
-        font-size: 40vw;
-        font-weight: 500;
-    }
-    .section-2 {
-        border-radius: 50px 50px 0 0;
-        border: 1px solid #BF1F2D;
-        border-bottom-style: none;
-    }
-    .description {
-        font-size: 3.5vw;
-        width: 62vw;
-    }
-    .section-3 {
-        border-radius: 50px 50px 0 0;
-        border: 1px solid #BF1F2D;
-        border-bottom-style: none;
-    }
-    .portrait {
-        width: 80vw;
-    }
-    #foot {
-        font-size: 3vw;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-  }
-
 .section-2 {
     display: flex;
     align-items: center;
@@ -193,12 +149,14 @@ a:active {
 
 hr {
     width: 100%;
-    border: 0.5px solid #BF1F2D;
+    border: 0.75px solid #BF1F2D;
 }
 
 footer {
     padding: 15vh;
     background-color: #FEFBF4;
+    margin-top: auto;
+    
 }
 
 #foot {
@@ -209,15 +167,97 @@ footer {
 
 #info {
     display: flex;
-    align-items: flex-start;
     justify-content: center;
-    flex-direction: row;
+    flex-flow: row wrap;
 }
 
-#location, #hours, #phone-social {
-    margin-right: 7vw;
+#location, #hours, #phone {
+    margin-right: 5vw;
 }
 
 h3 {
     font-weight: 500;
 }
+
+@media screen and (max-width: 500px) {
+    #hamburger {
+        font-size: 4vw;
+    }
+    .image-1 {
+      width: 120vw;
+      transform: rotate(90deg);
+      margin-top: 10vh;
+    }
+    .header {
+        margin-top: 10vw;
+        width: 95vw;
+    }
+    .subtitle {
+        margin-top: 17vw;
+    }
+    .subOne {
+        margin-right: 55vw;
+    }
+    .header-2 {
+        font-size: 10vw;
+        font-weight: 500;
+        margin-top: 5vh;
+    }
+    .section-2 {
+        border-radius: 50px 50px 0 0;
+        border: 1.5px solid #BF1F2D;
+        border-bottom-style: none;
+    }
+    .description {
+        font-size: 4vw;
+        width: 70vw;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .info {
+        font-size: 4vw;
+        width: 70vw;
+        font-weight: 400;
+        line-height: 30px;
+    }
+    .position {
+        font-size: 5vw;
+    }
+    .section-3 {
+        border-radius: 50px 50px 0 0;
+        border: 1.5px solid #BF1F2D;
+        border-bottom-style: none;
+    }
+    .portrait {
+        width: 80vw;
+    }
+    #info {
+        text-align: center;
+    }
+    #location {
+        margin-top: 0;
+        order: 1;
+        width: 100%;
+    }
+    
+    #hours {
+        margin-top: 0;
+        order: 2;
+        width: 100%;
+    }
+    
+    #phone {
+        margin-top: 0;
+        order: 3;
+        width: 100%;
+    }
+    
+    #social {
+        margin-top: 0;
+        order: 4;
+        width: 100%;
+    }
+    #location, #hours, #phone, #social {
+        margin-right: 0;
+    }
+  }
