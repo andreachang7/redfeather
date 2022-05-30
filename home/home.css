@@ -1,5 +1,3 @@
-
-
 body {
     font-family: 'Raleway', sans-serif;
     color: #BF1F2D;
@@ -25,6 +23,8 @@ footer{
     background-color: #FEFBF4;
 
 }
+
+/* Top Nav & Image Gallery & Middle Logo */
 
 #home_1 {
     background-image: url('../assets/cover-1.jpg');
@@ -94,7 +94,95 @@ footer{
             z-index:2;
         }
 
+    /* image gallery */
+
+        #slider {
+            width: 100%;
+            height:828px;
+            background-color: yellow;
+            margin-left: auto;
+            margin-right: auto;
+            /* position: absolute;
+            top:0px; */
+            text-align: center;
+            overflow: hidden;
+            margin-top: -50%;
+          }
+          .image-container {
+            display:flex;
+            background-color: rgb(255, 3, 45);
+            width: 1500px;
+            /* overflow: hidden; */
+            /* height:100%; */
+            clear: both;
+            position: relative;
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+            /* margin-top: -50%; */
+          }
+          
+          .slide {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            /* width: 480px;
+            height:100%; */
+            /* width:100%;
+            height:828px; */
+            position: relative;
+          } 
     
+          #image-gallery-1{
+              background-image: url('../assets/cover-1.jpg');
+              background-size:cover;
+              background-repeat:no-repeat;
+              width:100%;
+              height:828px;
+    
+          }
+    
+          #image-gallery-2{
+            background-image: url('../assets/cover-2.png');
+            background-size:cover;
+            background-repeat:no-repeat;
+            width:100%;
+            height:828px;
+        }
+    
+        #image-gallery-3{
+            background-image: url('../assets/cover-3.png');
+            background-size:cover;
+            background-repeat:no-repeat;
+            width:100%;
+            height:828px;
+        }
+    
+          
+          #slide-1:target ~ .image-container {
+            left: 0px;
+          }
+          #slide-2:target ~ .image-container {
+            left: -500px;
+          }
+          #slide-3:target ~ .image-container {
+            left: -1000px;
+          }
+          .buttons {
+            position: relative;
+            margin-top: -30%;
+            margin-bottom: 5%;
+          }
+          .buttons a {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            border-radius: 50px;
+            background-color: #FEFBF4;
+          }
+
+/* Introduction & Amenities */
     #section-2{
         position:relative;
     }
@@ -137,36 +225,28 @@ footer{
                     width: 90%;
                 }
 
-    #info{
-        display:flex;
-        font-size: 11px;
-
-    }
-
-    #info p{
-        line-height: 56.4%;
-    }
-
+/* Summary & Up Button */
     #summary{
         margin:6%;
         margin-top: 30%;
         margin-bottom: 30%;
     }
-        #rf-cursive{
-            font-family: 'Cormorant';
-            font-style: italic;
-            font-weight: 500;
-            font-size: 30px;
-            line-height: 156.4%;
-        }    
     
-        #summary-txt{
-            font-family: 'Raleway';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 20px;
-            line-height: 156.4%;
-            }
+    #rf-cursive{
+        font-family: 'Cormorant';
+        font-style: italic;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 156.4%;
+    }    
+
+    #summary-txt{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 156.4%;
+        }
 
     
     #up-sec{
@@ -179,93 +259,24 @@ footer{
             right:6%;
         }
 
+        
+
+
+/* Footer  */
+
+    #info{
+        display:flex;
+        font-size: 11px;
+
+    }
+
+    #info p{
+        line-height: 56.4%;
+    }
+
+
+
     .footerbox{
         padding-left:12%;
     }   
 
-
-      #slider {
-        width: 100%;
-        height:828px;
-        background-color: yellow;
-        margin-left: auto;
-        margin-right: auto;
-        /* position: absolute;
-        top:0px; */
-        text-align: center;
-        overflow: hidden;
-        margin-top: -50%;
-      }
-      .image-container {
-        display:flex;
-        background-color: rgb(255, 3, 45);
-        width: 1500px;
-        /* overflow: hidden; */
-        /* height:100%; */
-        clear: both;
-        position: relative;
-        -webkit-transition: left 2s;
-        -moz-transition: left 2s;
-        -o-transition: left 2s;
-        transition: left 2s;
-        /* margin-top: -50%; */
-      }
-      
-      .slide {
-        float: left;
-        margin: 0px;
-        padding: 0px;
-        /* width: 480px;
-        height:100%; */
-        /* width:100%;
-        height:828px; */
-        position: relative;
-      } 
-
-      #image-gallery-1{
-          background-image: url('../assets/cover-1.jpg');
-          background-size:cover;
-          background-repeat:no-repeat;
-          width:100%;
-          height:828px;
-
-      }
-
-      #image-gallery-2{
-        background-image: url('../assets/cover-2.png');
-        background-size:cover;
-        background-repeat:no-repeat;
-        width:100%;
-        height:828px;
-    }
-
-    #image-gallery-3{
-        background-image: url('../assets/cover-3.png');
-        background-size:cover;
-        background-repeat:no-repeat;
-        width:100%;
-        height:828px;
-    }
-
-      
-      #slide-1:target ~ .image-container {
-        left: 0px;
-      }
-      #slide-2:target ~ .image-container {
-        left: -500px;
-      }
-      #slide-3:target ~ .image-container {
-        left: -1000px;
-      }
-      .buttons {
-        position: relative;
-        margin-top: -30%;
-        margin-bottom: 5%;
-      }
-      .buttons a {
-        display: inline-block;
-        height: 15px;
-        width: 15px;
-        border-radius: 50px;
-        background-color: #FEFBF4;
-      }

@@ -19,8 +19,10 @@
     <script src="home.js" defer></script>
   </head>
   <body>
-  <!-- Top Navigation Menu -->
-    <!-- <div id="home_1">
+
+  <!-- Top Nav & Image Gallery & Middle Logo -->
+  <section id="section-1">
+    <!-- Top Navigation Menu -->
       <div class="topnav" id="topnav">
         <a href="#home" class="active"></a>
         <div id="hamburger">
@@ -32,71 +34,62 @@
         <a href="javascript:void(0);" class="icon" id="ham_icon" onclick="hamburgerToggle()">
         </a>
       </div>
-      <div id="main_logo_holder">
-        <img src="../assets/red_feather_logo.png" width="428px" id="main_logo">
-      </div>
       <div id="gallery_slider"></div>
-    </div> -->
-<section id="section-1">
-    <div class="topnav" id="topnav">
-      <a href="#home" class="active"></a>
-      <div id="hamburger">
-        <a href="#news">Menu</a>
-        <a href="#contact">About</a>
-        <a href="#about">Contact</a>
-        <a href="#about">Reserve</a>
-      </div>
-      <a href="javascript:void(0);" class="icon" id="ham_icon" onclick="hamburgerToggle()">
-      </a>
-    </div>
-    <div id="gallery_slider"></div>
 
-
-    <div id="slider">
-      <div id="main_logo_holder">
-        <img src="../assets/red_feather_logo.png" width="428px" id="main_logo">
+      <!-- Image Gallery & Logo -->
+      <div id="slider">
+        
+        <!-- Logo -->
+        <div id="main_logo_holder"> <!-- this div holds the logo image in the middle -->
+          <img src="../assets/red_feather_logo.png" width="428px" id="main_logo">
+        </div>
+        
+        <!-- Image Gallery -->
+        <span id="slide-1"></span>
+        <span id="slide-2"></span>
+        <span id="slide-3"></span>
+        <div class="image-container">
+          <div class="slide" id="image-gallery-1"></div>
+          <div class="slide" id="image-gallery-2"></div>
+          <div class="slide" id="image-gallery-3"></div>
+        </div>
+        <div class="buttons">
+          <a href="#slide-1"></a>
+          <a href="#slide-2"></a>
+          <a href="#slide-3"></a>
+        </div>
       </div>
-                      <span id="slide-1"></span>
-                      <span id="slide-2"></span>
-                      <span id="slide-3"></span>
-                      <div class="image-container">
-                        <div class="slide" id="image-gallery-1"></div>
-                        <div class="slide" id="image-gallery-2"></div>
-                        <div class="slide" id="image-gallery-3"></div>
-                      </div>
-                      <div class="buttons">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                      </div>
-    </div>
-  </section>
+    </section>
   
     <!-- Introduction -->
     <section id="section-2">
-    <div id="home_2">
-      <h1 id="introtitle">Introduction</h1>
-      <p id="introtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-      <div id="amenities">
-        <div class="amenity">
-          <img src="../assets/image-2.jpg" id="bar_img" class="home_imgs">
-          <h2>Bar</h2>
-        </div>
+      <div id="home_2"><!-- originally home_1 & home_2 serves as sections but now not sure to remove it or not -->
+        <h1 id="introtitle">Introduction</h1>
+        <p id="introtxt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+        
+        <!-- 3 Amenities -->
+        <div id="amenities">
+          <div class="amenity">
+            <img src="../assets/image-2.jpg" id="bar_img" class="home_imgs">
+            <h2>Bar</h2>
+          </div>
 
-        <div class="amenity">
-          <img src="../assets/image-3.jpg" id="interior_img" class="home_imgs">
-          <h2>Interior</h2>
-        </div>
+          <div class="amenity">
+            <img src="../assets/image-3.jpg" id="interior_img" class="home_imgs">
+            <h2>Interior</h2>
+          </div>
 
-        <div class="amenity">
-          <img src="../assets/image-4.jpg" id="exterior_img" class="home_imgs">
-          <h2>Exterior</h2>
+          <div class="amenity">
+            <img src="../assets/image-4.jpg" id="exterior_img" class="home_imgs">
+            <h2>Exterior</h2>
+          </div>
         </div>
       </div>
-    </div>
   </section>
   
+  <!-- Summary Text and Up Button -->
   <section>
+    <!-- Summary Text -->
     <div id="summary">
         <p id="summary-txt"><span id="rf-cursive">Red Feather</span> is a New York based restaurant, 
           founded in 2022. Lorem ip sum dolor sit amet, conse adipiscing et. 
@@ -104,17 +97,17 @@
         </p>
     </div>
 
+    <!-- Up Button -->
     <div id="up-sec">
       <a href="#section-1">
         <img src="../assets/up-btn.png" id="up-btn">
       </a>
     </div>
 
-
-
   <hr/>
 </section>
 
+<!-- Footer -->
 <footer id="foot">
     <div id="info" class="footerbox">
       <div id="location">
