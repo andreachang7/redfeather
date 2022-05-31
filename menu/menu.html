@@ -1,32 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/x-icon" width="150px" height="150px" href="../assets/logo.png"/>
-
-    <title>MENU</title>
-
-    <link rel="stylesheet" href="menu.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="menu.css">
     <script src="menu.js" defer></script>
-  </head>
-  <body>
-    <p>Collapsible Set:</p>
-    <button type="button" class="collapsible">Appetizer</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <link rel="icon" href="assets/dot.png">
+    <title>Menu</title>
+</head>
+<body>
+    <div id="home_1" class = "home_gallery">
+        <div class="topnav" id="topnav">
+          <a href="#home" class="active"></a>
+          <div id="hamburger">
+            <div class="menu-1"><a href="#news">Menu</a></div>
+            <div class="menu-2"><a href="../about/about.html">About</a></div>
+            <div class="menu-3"><a href="#about">Contact</a></div>
+            <div class="menu-4"><a href="#about">Reserve</a></div>
+          </div>
+          <a href="javascript:void(0);" class="icon" id="ham_icon" onclick="hamburgerToggle()">
+          </a>
+        </div>
     </div>
-    <button type="button" class="collapsible">Produce</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    
+    <div class="button-container">
+        <div class="button">
+            Delivery/Take-Out
+        </div>
     </div>
-    <button type="button" class="collapsible">Entrees</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<hr> 
+
+    <div class="app-container">
+
+    <button type="button" class="appetizer-section">Appetizers</button>
+
+    <div class="app-content">
+
+        <div class="container">
+            <div class="box bugak">
+                <div class="food-container">
+                    <div class="food">
+                        <h1 class="dish-name">Bugak Chips</h1>
+                        <h3>(vegan)</h3>
+                        <h3 class="ingredients">kimchi, seaweed, lemon aioli</h3>
+                    </div>
+                    <div class="price">
+                        <div class="tag bugak">$9</div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/food-2.png" class="food-image">
+        </div>
+
+        <div class="container">
+            <div class="box">
+                <div class="food-container">
+                    <div class="food">
+                        <h1 class="dish-name">Cauliflower & <br>Mushroom Poppers</h1>
+                        <h3 class="ingredients">salt, pepper</h3>
+                    </div>
+                    <div class="price">
+                        <div class="tag bugak">$12</div>
+                    </div>
+                </div>
+            </div>
+            <img src="assets/food-2.png" class="food-image">
+        </div>
+
+
+            <div class="box">
+                <div class="food-container">
+                    <div class="food">
+                        <h1 class="dish-name">Garlic Milk Bread</h1>
+                        <h3 class="ingredients">chives, mozzarella</h3>
+                    </div>
+                    <div class="price">
+                        <div class="tag bugak">$12</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="food-container">
+                    <div class="food">
+                        <h1 class="dish-name">Shrimp & Pork <br>Imperial Rolls</h1>
+                        <h3 class="ingredients">mint, lettuce, shitake mushroom</h3>
+                    </div>
+                    <div class="price">
+                        <div class="tag bugak">$13</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="food-container">
+                    <div class="food">
+                        <h1 class="dish-name">Soy Caramel Wings</h1>
+                        <h3 class="ingredients">garlic, star anise</h3>
+                    </div>
+                    <div class="price">
+                        <div class="tag bugak">$13</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="food-container">
+                    <div class="food">
+                        <h1 class="dish-name">Black Mushroom<br> & Tofu</h1>
+                        <h3 class="ingredients">sate, jalapeno, peanuts</h3>
+                    </div>
+                    <div class="price">
+                        <div class="tag bugak">$12</div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
     </div>
-    <button type="button" class="collapsible">Sides</button>
-    <div class="content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+<hr>
+
+<!-- PRODUCE -->
+
+    <div class="produce-container">
+        <button type="button" class="produce-section">Produce</button>
+        <div class="produce-content">
+
+        <div class="box">
+            <div class="food-container">
+                <div class="food">
+                    <h1>Rose Udon</h1>
+                    <h3>tomato, garlic, seaweed</h3>
+                    <p>add-ons: five-spice shrimp or crispy pork belly</p>
+                </div>
+                <div class="price">
+                    <div class="tag">$25</div>
+                </div>
+            </div>
+        </div>
+
+        </div>
     </div>
-  </body>
+
+    <hr>
+<!-- ENTREES -->
+
+    <div class="entree-container">
+        <button type="button" class="entree-section">Entrees</button>
+        <div class="entree-content">
+
+        <div class="box">
+            <div class="food-container">
+                <div class="food">
+                    <h1>Rose Udon</h1>
+                    <h3>tomato, garlic, seaweed</h3>
+                    <p>add-ons: five-spice shrimp or crispy pork belly</p>
+                </div>
+                <div class="price">
+                    <div class="tag">$25</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<hr>
+<!-- SIDES -->
+
+<div class="sides-container">
+    <button type="button" class="sides-section">Sides</button>
+    <div class="sides-content">
+
+    <div class="box">
+        <div class="food-container">
+            <div class="food">
+                <h1>Rose Udon</h1>
+                <h3>tomato, garlic, seaweed</h3>
+                <p>add-ons: five-spice shrimp or crispy pork belly</p>
+            </div>
+            <div class="price">
+                <div class="tag">$25</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<hr>
+<!-- DESSERTS -->
+
+<div class="desserts-container">
+    <button type="button" class="desserts-section">Desserts</button>
+    <div class="desserts-content">
+
+    <div class="box">
+        <div class="food-container">
+            <div class="food">
+                <h1>Rose Udon</h1>
+                <h3>tomato, garlic, seaweed</h3>
+                <p>add-ons: five-spice shrimp or crispy pork belly</p>
+            </div>
+            <div class="price">
+                <div class="tag">$25</div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+<hr>
+
+<div id="up-sec">
+    <a href="#app-container">
+      <img src="assets/up-btn.png" id="up-btn">
+    </a>
+</div>
+
+</body>
+
+<hr>
+
+<footer id="foot">
+    <div id="info" class="footerbox">
+      <div id="location">
+        <h3><a href="https://www.google.com/maps/dir/40.7633058,-73.9712484/82+W+3rd+St,+New+York,+NY+10012/@40.7461559,-74.0010818,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25991a2e3c931:0xbb0383d45867712f!2m2!1d-73.9989571!2d40.7297021" class="link-1">Location</a></h3>
+        <p>82 W 3rd St</p>
+        <p>New York, NY</p>
+        <p>10012</p>
+      </div>
+
+      <div id="hours" class="footerbox">
+        <h3>Hours</h3>
+        <p>Mon-Fri</p>
+        <p>11 am - 7 pm</p>
+        <p>Sat - Sun</p>
+        <p>10 am - 10 pm</p>
+      </div>
+
+      <div id="phone" class="footerbox">
+        <div id="phone">
+          <h3>Phone</h3>
+          <p>(123) 456-7890</p>
+        </div>
+      </div>
+
+      <div id="social" >
+        <h3>Social</h3>
+        <img src="../mainassets/secondarylogo.png"width="50" height="60" id="Instagram">
+        <img src="../mainassets/secondarylogo.png"width="50" height="60" id="TikTok">
+      </div> 
+    </div>
+</footer>
+
 </html>

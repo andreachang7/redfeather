@@ -1,22 +1,403 @@
-.collapsible {
-  background-color: #777;
-  color: white;
+html {
+  font-family: 'Raleway', sans-serif;
+  background-color: #FEFBF4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+/* START OF NAVIGATION */
+
+#hamburger {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 1.25vw;
+  margin-top: 3vh;
+}
+
+.menu-1, .menu-2, .menu-3, .menu-4 {
+  margin-right: 2vw;
+  margin-top: 0.5vh;
+}
+
+a:link {
+  text-decoration: none;
+  color: #BF1F2D;
+}
+
+a:visited { 
+  text-decoration: none; 
+  color: #BF1F2D;
+}
+
+a:hover { 
+  text-decoration: none; 
+  color: #BF1F2D;
+  font-weight: 700;
+}
+
+a:active { 
+  text-decoration: none; 
+  color: #BF1F2D;
+}
+
+/* END OF NAVIGATION */
+/* DELIVERY BUTTON */
+
+.button-container {
+  display: flex;
+  align-self: flex-end;
+  margin-top: 15vh;
+  margin-right: 5vw;
+  margin-bottom: 5vh;
+}
+
+.button {
+  color: #BF1F2D;
+  border: 1px solid #BF1F2D;
+  padding: 0.75vw;
+}
+
+.button:hover {
+  color: #FEFBF4;
+  background-color: #BF1F2D;
+  cursor: pointer;
+}
+
+/* END OF BUTTON */
+
+/* START OF MENU ITEMS */
+
+/* APPETIZERS */
+.appetizer-section {
+  color: #BF1F2D;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
   outline: none;
-  font-size: 15px;
+  font-size: 3.5vw;
 }
 
-.active, .collapsible:hover {
-  background-color: #555;
-}
-
-.content {
-  padding: 0 18px;
+.app-content {
+  padding: 18px;
   display: none;
-  overflow: hidden;
-  background-color: #f1f1f1;
+  overflow: auto;
+  white-space: nowrap;
 }
+
+.app-content .box {
+  display: inline-block;
+}
+
+button {
+  background-color: #FEFBF4;
+}
+
+.box {
+  border: 0.8px solid black;
+  width: 400px;
+  color: black;
+  padding: 2vw;
+  padding-top: 1vh;
+  display: flex;
+  margin-top: 2vh;
+  margin-right: 2vw;
+  margin-bottom: 3vh;
+}
+
+.bugak {
+  margin-left: 2vw;
+}
+
+.food-container {
+  display: flex;
+}
+
+.dish-name {
+  font-family: 'Cormorant', serif;
+  font-weight: 400;
+  font-size: 2.5vw;
+}
+
+.ingredients {
+  font-size: 1vw;
+}
+
+.additionals {
+  font-size: 1vw;
+}
+
+.tag {
+  background-color: black;
+  color: #FEFBF4;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2vh;
+  margin-top: 3vh;
+}
+
+.white {
+  background-color: #FEFBF4;
+  color: black;
+  border: 1px solid black;
+}
+
+.container {
+  display: flex;
+}
+
+.food-image {
+  width: 200px;
+  margin-left: -10vw;
+  /* margin-top: 15vh; */
+}
+
+/* END OF APPETIZERS */
+/* START OF PRODUCE */
+
+.produce-section {
+  color: #BF1F2D;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 3.5vw;
+}
+
+.produce-content {
+  padding: 18px;
+  display: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.produce-content .box {
+  display: inline-block;
+}
+
+/* END OF PRODUCE */
+/* START OF ENTREES */
+
+.entree-section {
+  color: #BF1F2D;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 3.5vw;
+}
+
+.entree-content {
+  padding: 18px;
+  display: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.entree-content .box {
+  display: inline-block;
+}
+
+/* END OF ENTREES */
+/* START OF SIDES */
+
+.sides-section {
+  color: #BF1F2D;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 3.5vw;
+}
+
+.sides-content {
+  padding: 18px;
+  display: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.sides-content .box {
+  display: inline-block;
+}
+
+/* END OF SIDES */
+/* START OF DESSERTS */
+
+
+.desserts-section {
+  color: #BF1F2D;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 3.5vw;
+}
+
+.desserts-content {
+  padding: 18px;
+  display: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.desserts-content .box {
+  display: inline-block;
+}
+
+/* END OF SIDES */
+
+/* UP BUTTON */
+#up-sec{
+  height:20vh;
+  margin-top: 5vh;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#up-btn{
+  position: absolute;
+}
+
+/* FOOTER */
+
+hr {
+  width: 100%;
+  border: 0.5px solid #BF1F2D;
+}
+
+footer {
+  padding: 15vh;
+  background-color: #FEFBF4;
+}
+
+#foot {
+  color: #BF1F2D;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+
+#info {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+#location, #hours, #phone {
+  margin-right: 5vw;
+}
+
+.link-1:hover {
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+/* END OF FOOTER */
+/* START OF MEDIA SCREEN */
+
+@media screen and (max-width: 500px) {
+  #hamburger {
+      font-size: 4vw;
+  }
+  .button-container {
+      align-self: center;
+      margin-top: 10vh;
+      margin-right: 0;
+      margin-left: 0;
+  }
+  .appetizer-section {
+      font-size: 12vw;
+  }
+  .produce-section {
+      font-size: 12vw;
+  }
+  .entree-section {
+      font-size: 12vw;
+  }
+  .sides-section {
+      font-size: 12vw;
+  }
+  .desserts-section {
+      font-size: 12vw;
+  }
+  .appetizers {
+      width: 300px;
+  }
+  .dish-name {
+      font-size: 9vw;
+      margin-top: 1vh;
+  }
+  .ingredients {
+      font-size: 3.5vw;
+  }
+  .additionals {
+      font-size: 3vw;
+  }
+  .food {
+      margin-right: 2vw;
+  }
+  .tag {
+      margin-top: 1vh;
+      height: 40px;
+      width: 40px;
+  }
+  .white {
+      border: 0.75px solid black;
+  }
+  #up-sec {
+      justify-content: center;
+      align-items: center;
+  }
+  #info {
+      text-align: center;
+  }
+  #location {
+      margin-top: 0;
+      order: 1;
+      width: 100%;
+  }
+  
+  #hours {
+      margin-top: 0;
+      order: 2;
+      width: 100%;
+  }
+  
+  #phone {
+      margin-top: 0;
+      order: 3;
+      width: 100%;
+  }
+  
+  #social {
+      margin-top: 0;
+      order: 4;
+      width: 100%;
+  }
+  #location, #hours, #phone, #social {
+      margin-right: 0;
+  }
+}
+
+/* END OF MEDIA SCREEN */
