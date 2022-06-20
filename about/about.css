@@ -17,6 +17,7 @@ body {
     margin-top: 3vh;
 }
 
+
 .menu-1, .menu-2, .menu-3, .menu-4 {
     margin-right: 2vw;
     margin-top: 0.5vh;
@@ -183,6 +184,52 @@ h3 {
     #hamburger {
         font-size: 4vw;
     }
+
+    .topnav {
+        overflow: hidden;
+        background-color:transparent;
+        position: relative;
+        z-index: 2;
+      }
+      
+        .topnav #hamburger {
+            background-color: #FEFBF4;
+            display: none;
+            height:100vh;
+        }
+        
+        .topnav a {
+            color:#BF1F2D;
+            padding: 40px 30px;
+            text-decoration: none;
+            font-size:60px;
+            display: block;
+            text-align: center;
+            font-family: 'Raleway', sans-serif;
+            font-style: normal;
+            margin-top: 10px;
+            font-weight: 500;
+            line-height: 30px;
+        }
+        
+        .topnav a.icon {
+            display: block;
+            position: absolute;
+            /* padding: 20%; */
+            right: 0;
+            top: 0;
+        }
+        
+        .topnav a:hover {
+            /* background-color: #ddd; */
+            color: black;
+        }
+        
+        .active {
+            color: white;
+            height:60px;
+        }
+
     .image-1 {
       width: 120vw;
       transform: rotate(90deg);

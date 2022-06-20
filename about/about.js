@@ -9,7 +9,6 @@ let slider = document.getElementById("gallery_slider");
 // image fade
 let slideIndex = 0;
 
-
 document.addEventListener("DOMContentLoaded", function(){
     console.log("laoded");
     close.style.backgroundImage = "url('../assets/hamburger.png')";
