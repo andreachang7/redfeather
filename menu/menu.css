@@ -19,6 +19,11 @@ body {
   margin-top: 3vh;
 }
 
+.logo {
+  width: 4vw;
+  margin-right: 70%;
+}
+
 .menu-1, .menu-2, .menu-3, .menu-4 {
   margin-right: 2vw;
   margin-top: 0.5vh;
@@ -115,6 +120,31 @@ button {
   margin-left: 2vw;
 }
 
+.bugak-chips {
+  margin-right: 5vw;
+}
+
+.cauliflower {
+  margin-right: 2vw;
+}
+
+.milk-bread {
+  margin-right: 5vw;
+}
+
+.shrimp-pork {
+  margin-right: 5vw;
+}
+
+.soy-caramel {
+  margin-right: 4vw;
+}
+
+.mushroom-tofu {
+  margin-right: 3vw;
+}
+
+
 /* .box.bugak:hover {
   color: blue;
   background-color: #BF1F2D;
@@ -147,7 +177,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 2vh;
+  margin-bottom: -2vh;
   margin-top: 3vh;
 }
 
@@ -202,6 +232,12 @@ button {
   margin-left: 2vw;
 }
 
+.watermelon {
+  margin-right: 2vw;
+}
+
+
+
 /* END OF PRODUCE */
 /* START OF ENTREES */
 
@@ -231,6 +267,30 @@ button {
   margin-left: 2vw;
 }
 
+.steak {
+  margin-right: 3vw;
+}
+
+.shrimp {
+  margin-right: 2vw;
+}
+
+.chicken {
+  margin-right: 1.5vw;
+}
+
+.branzino {
+  margin-right: 5vw;
+}
+
+.rose-udon {
+  margin-right: 5vw;
+}
+
+.rose-img {
+  margin-left: -7vw;
+}
+
 /* END OF ENTREES */
 /* START OF SIDES */
 
@@ -258,6 +318,22 @@ button {
 
 .sides {
   margin-left: 2vw;
+}
+
+.rice {
+  padding-right: 15vw;
+}
+
+.rice-box {
+  width: 50vw;
+}
+
+.brussel {
+  margin-right: 5vw;
+}
+
+.cucumber {
+  margin-right: 5vw;
 }
 
 /* END OF SIDES */
@@ -290,7 +366,141 @@ button {
   margin-left: 2vw;
 }
 
-/* END OF SIDES */
+.matcha {
+  margin-right: 4vw;
+}
+
+.lava {
+  margin-right: 4vw;
+}
+
+/* END OF DESSERTS */
+/* START OF DRINKS */
+
+.drinks-section {
+  color: #BF1F2D;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 3.5vw;
+}
+
+.drinks-content {
+  padding: 18px;
+  display: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.drinks-content .box {
+  display: inline-block;
+}
+
+.drinks-box {
+  margin-right: 2vw;
+}
+
+.drinks {
+  margin-left: 2vw;
+}
+
+.thai {
+  margin-right: 4vw;
+}
+
+.soda {
+  margin-right: 4vw;
+}
+
+.lemonade {
+  margin-right: 4vw;
+}
+
+/* END OF DRINKS */
+/* START OF COCKTAILS */
+
+.cocktails-section {
+  color: #BF1F2D;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 3.5vw;
+}
+
+.cocktails-content {
+  padding: 18px;
+  display: none;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.cocktails-content .box {
+  display: inline-block;
+}
+
+.cocktails-box {
+  margin-right: 2vw;
+}
+
+.cocktails {
+  margin-left: 2vw;
+}
+
+.bourbon {
+  margin-right: 4vw;
+}
+
+.singapore {
+  margin-right: 4vw;
+}
+
+.mango {
+  margin-right: 4vw;
+}
+
+.thai-gimlet {
+  margin-right: 4vw;
+}
+
+.thai-basil {
+  margin-right: 4vw;
+}
+
+.thai-gin {
+  margin-right: 4vw;
+}
+
+.dark-stormy {
+  margin-right: 4vw;
+}
+
+.tokyo {
+  margin-right: 4vw;
+}
+
+.lemongrass {
+  margin-right: 4vw;
+}
+
+.thai-gin {
+  margin-right: 4vw;
+}
+
+.green-tea {
+  margin-right: 4vw;
+}
+
+
+
+
+/* END OF COCKTAILS */
+
 
 /* UP BUTTON */
 #up-sec{
@@ -327,12 +537,12 @@ footer {
   margin-right: 5vw;
 }
 
-.link-1:hover {
-  font-weight: 700;
-}
-
 h3 {
   font-weight: 500;
+}
+
+#instagram, #tiktok {
+  font-weight: 700;
 }
 
 /* END OF FOOTER */
@@ -350,6 +560,10 @@ h3 {
 } */
 
 @media screen and (max-width: 500px) {
+  .logo {
+      margin-right: 20%;
+      width: 13vw;
+  }
   #hamburger {
       font-size: 4vw;
   }
@@ -358,6 +572,9 @@ h3 {
       margin-top: 10vh;
       margin-right: 0;
       margin-left: 0;
+  }
+  .tag {
+      margin-bottom: 2vh;
   }
   .appetizer-section {
       font-size: 12vw;
@@ -374,12 +591,22 @@ h3 {
   .desserts-section {
       font-size: 12vw;
   }
+  .drinks-section {
+      font-size: 12vw;
+  }
+  .cocktails-section {
+      font-size: 12vw;
+  }
+  .drinks-box {
+      margin-right: 10vw;
+  }
   .appetizers {
       width: 300px;
   }
   .dish-name {
       font-size: 9vw;
       margin-top: 1vh;
+      /* width: 3vw; */
   }
   .ingredients {
       font-size: 3.5vw;
@@ -389,6 +616,27 @@ h3 {
   }
   .food {
       margin-right: 2vw;
+  }
+  .bugak-chips {
+      margin-right: 12vw;
+  }
+  .chicken {
+      margin-right: 20vw;
+  }
+  .steak {
+      margin-right: 16vw;
+  }
+  .shrimp {
+      margin-right: 20vw;
+  }
+  .branzino {
+      margin-right: 15vw;
+  }
+  .rose-udon {
+      margin-right: 20vw;
+  }
+  .singapore {
+      margin-right: 6vw;
   }
   .tag {
       margin-top: 1vh;
@@ -400,6 +648,96 @@ h3 {
   }
   .food-image {
       margin-left: -20vw;
+  }
+  .cauli-img {
+      margin-left: -30vw;
+  }
+  .garlic-img {
+      margin-left: -30vw;
+  }
+  .shrimp-img {
+      margin-left: -25vw;
+  }
+  .soy-img {
+      margin-left: -30vw;
+  }
+  .black-img {
+      margin-left: -30vw;
+  }
+  .beet-img {
+      margin-left: -30vw;
+  }
+  .bamboo-img {
+      margin-left: -25vw;
+  }
+  .asparagus-img {
+      margin-left: -30vw;
+  }
+  .steak-img {
+      margin-left: -30vw;
+  }
+  .spicyshrimp-img {
+      margin-left: -30vw;
+  }
+  h1 span:nth-of-type(1) {
+      display: block;
+  }
+  .additional-info {
+      font-size: 4vw;
+  }
+  .chicken-img {
+      margin-left: -30vw;
+  }
+  .branzino-img {
+      margin-left: -30vw;
+  }
+  .rose-img {
+      margin-left: -25vw;
+  }
+  .brussel-img {
+      margin-left: -30vw;
+  }
+  .cucumber-img {
+      margin-left: -30vw;
+  }
+  .rice-img {
+      margin-left: -30vw;
+  }
+  .matcha-img {
+      margin-left: -30vw;
+  }
+  .lava-img {
+      margin-left: -30vw;
+  }
+  .ginger-img {
+      margin-left: -30vw;
+  }
+  .singapore-img {
+      margin-left: -30vw;
+  }
+  .mango-img {
+      margin-left: -30vw;
+  }
+  .gimlet-img {
+      margin-left: -30vw;
+  }
+  .thaigin-img {
+      margin-left: -30vw;
+  }
+  .basil-img {
+      margin-left: -30vw;
+  }
+  .stormy-img {
+      margin-left: -30vw;
+  }
+  .tokyo-img {
+      margin-left: -30vw;
+  }
+  .lemongrass-img {
+      margin-left: -30vw;
+  }
+  .green-tea-img {
+      margin-left: -30vw;
   }
   #up-sec {
       margin-left: 45%;

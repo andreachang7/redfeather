@@ -13,44 +13,78 @@
     <title>About</title>
 </head>
 <body>
-    <div id="home_1">
+    <!-- <div id="home_1" class = "home_gallery">
         <div class="topnav" id="topnav">
           <a href="#home" class="active"></a>
           <div id="hamburger">
-            <div class="menu-1"><a href="../menu/menu.html">Menu</a></div>
-            <div class="menu-2"><a href="../about/about.html">About</a></div>
-            <div class="menu-3"><a href="../contact/contact.html">Contact</a></div>
-            <div class="menu-4"><a href="#about">Reserve</a></div>
+            <a href="../home.html" class="logo">
+              <img src="../assets/secondary-logo-stroke.png" class="logo" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">
+            </a>
+            <div class="menu-1"><a href="../menu/menu.html" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">Menu</a></div>
+            
+            <div class="menu-2"><a href="about.html" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">About</a></div>
+            
+            <div class="menu-3"><a href="../contact/contact.html" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">Contact</a></div>
+            
+            <div class="menu-4"><a href="#about" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">Reserve</a></div>
           </div>
           <a href="javascript:void(0);" class="icon" id="ham_icon" onclick="hamburgerToggle()">
           </a>
         </div>
+    </div> -->
+
+    
+    <div id="hori-ham">
+      
+      <div id="h-hamburger">
+        <a href="javascript:void(0);" class="icon" id="h-rf-icon" onclick="window.location.href='../home.html'"></a>
+        <div class="menu-1"><a href="../menu/menu.html">Menu</a></div>
+        <div class="menu-2"><a href="../about/about.html">About</a></div>
+        <div class="menu-3"><a href="../contact/contact.html">Contact</a></div>
+        <div class="menu-4"><a href="#about">Reserve</a></div>
+      </div>
     </div>
+
+    <div id="verti-ham">
+      <div class="topnav" id="topnav">
+        <a href="#home" class="active"></a>
+        <div id="v-hamburger">
+          <div class="menu-1"><a href="../menu/menu.html">Menu</a></div>
+          <div class="menu-2"><a href="../about/about.html">About</a></div>
+          <div class="menu-3"><a href="../contact/contact.html">Contact</a></div>
+          <div class="menu-4"><a href="#about">Reserve</a></div>
+        </div>
+        <a href="javascript:void(0);" class="icon" id="v-rf-icon" onclick="window.location.href='../home.html'"></a>
+        <a href="javascript:void(0);" class="icon" id="ham_icon" onclick="hamburgerToggle()">
+        </a>
+      </div>
+    </div>
+
 
     <!-- MENU END -->
     
-    <div class="section-1">
-        <img src="../assets/image-1.jpg" alt="about-image" class="image-1">
+    <div class="section-1" id="section-1">
+        <img src="../assets/web-bird.png" alt="phoenix-logo" class="image-1">
 
         <div class="subtitle-container">
             <p class="subtitle subOne">New York City</p>
             <p class="subtitle subTwo">2022</p>
         </div>
 
-        <img src="../assets/primary-logo.png" class="header">
+        <!--<img src="../assets/primary-logo.png" class="header">-->
     </div>
 
-    <div class="section-2">
+    <div class="section-2" id="section-2">
         <h1 class="header-2">About</h1>
         <p class="description">
             Red Feather sits in the heart of Greenwich village, close to the lively and beautiful Washington Square Park. The comfortable dining area will evoke a fun yet upscale atmosphere with beautiful colors and art pieces from the ceiling that will pair with the craftsmanship from the Chef and bartender. 
         </p>
     </div>
 
-    <div class="section-3">
-        <h1 class="header-2">The Chef</h1>
+    <div class="section-3" id="section-3">
+        <!--<h1 class="header-2">The Chef</h1>-->
         
-        <img src="../assets/portrait-2.png" class="portrait">
+        <!--<img src="../assets/portrait-2.png" class="portrait">-->
         <h1 class="name">Chef Pia Gervacio</h1>
         <p class="position">Main Chef</p>
         <p class="info">Red Feather is helmed by Chef Pia Gervacio who has trained at and managed several Michelin starred restaurants. Having been born and raised in the Philippines, she will bring all the vibrant flavors of Southeast Asia (Thailand, Philippines, Indonesia, Korea, Japan) and pair it with Modern American fare.</p>
@@ -58,12 +92,12 @@
 
 </body>
 
-<hr>
 
 <footer id="foot">
+  <hr>
     <div id="info" class="footerbox">
       <div id="location">
-        <h3><a href="https://www.google.com/maps/dir/40.7633058,-73.9712484/82+W+3rd+St,+New+York,+NY+10012/@40.7461559,-74.0010818,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25991a2e3c931:0xbb0383d45867712f!2m2!1d-73.9989571!2d40.7297021" class="link-1">Location</a></h3>
+        <h3><a href="https://www.google.com/maps/dir/40.7633058,-73.9712484/82+W+3rd+St,+New+York,+NY+10012/@40.7461559,-74.0010818,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25991a2e3c931:0xbb0383d45867712f!2m2!1d-73.9989571!2d40.7297021" class="link-1" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">Location</a></h3>
         <p>82 W 3rd St</p>
         <p>New York, NY </p>
         <p>10012</p>
@@ -80,14 +114,16 @@
       <div id="phone" class="footerbox">
         <div id="phone">
           <h3>Phone</h3>
-          <p>(123) 456-7890</p>
+          <a href="tel:123-456-7890" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">(123) 456-7890</a>
         </div>
       </div>
 
       <div id="social" >
         <h3>Social</h3>
-        <img src="../assets/logo.png"width="50" height="60" id="Instagram">
-        <img src="../assets/logo.png"width="50" height="60" id="TikTok">
+        <a target="_blank" href="https://www.instagram.com/redfeathernyc/" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);"><span id="instagram">ig</span> @redfeathernyc</a>
+        <br>
+        <br>
+        <a target="_blank" href="https://www.tiktok.com/@redfeathernyc" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);"><span id="tiktok">tk</span> @redfeathernyc</a>
       </div> 
     </div>
 </footer>

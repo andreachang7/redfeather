@@ -1,6 +1,7 @@
 html {
     font-family: 'Raleway', sans-serif;
     background-color: #FEFBF4;
+    /* background-color: white; */
 }
 
 body {
@@ -9,12 +10,37 @@ body {
     margin: 0;
 }
 
-#hamburger {
+#verti-ham{
+    display: none;
+}
+
+
+#hori-ham{
+    display: block;
+
+}
+
+
+
+#h-hamburger {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-size: 1.25vw;
-    margin-top: 3vh;
+    padding: 30px;
+}
+
+#h-rf-icon {
+    display: block;
+    position: absolute;
+    margin:1.5%;
+    width: 60px;
+    height: 60px;
+    background-image: url('../assets/secondary-logo-stroke.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    top: 0;
 }
 
 
@@ -22,6 +48,7 @@ body {
     margin-right: 2vw;
     margin-top: 0.5vh;
 }
+
 
 a:link {
     text-decoration: none;
@@ -59,6 +86,7 @@ a:active {
     width: 35vw;
     margin-top: 3vw;
     border: 3px solid #BF1F2D;
+    transform: rotate(90deg);
 }
 
 .subtitle-container {
@@ -94,7 +122,8 @@ a:active {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: #BF1F2D;
+    background-color: #BF1F2D;
+    color: #FEFBF4;
     margin-top: 5vh;
     padding-bottom: 8vh;
 }
@@ -103,7 +132,7 @@ a:active {
     font-weight: 400;
     font-size: 2.5vw;
     margin-top: 10vh;
-    margin-bottom: 0;
+    margin-bottom: 2vh;
     text-align: center;
 }
 
@@ -131,7 +160,6 @@ a:active {
 
 .name {
     margin-bottom: 0;
-    margin-top: 0;
 }
 
 .info {
@@ -157,7 +185,7 @@ footer {
     padding: 15vh;
     background-color: #FEFBF4;
     margin-top: auto;
-    
+    margin-bottom: 10vh;
 }
 
 #foot {
@@ -176,12 +204,25 @@ footer {
     margin-right: 5vw;
 }
 
+#instagram, #tiktok {
+    font-weight: 700;
+}
+
 h3 {
     font-weight: 500;
 }
 
+
 @media screen and (max-width: 500px) {
-    #hamburger {
+    #hori-ham{
+        display: none;
+    }
+    
+    #verti-ham{
+        display: block;
+    }
+
+    #v-hamburger {
         font-size: 4vw;
     }
 
@@ -212,13 +253,23 @@ h3 {
             line-height: 30px;
         }
         
-        .topnav a.icon {
+        #ham_icon{
             display: block;
             position: absolute;
             /* padding: 20%; */
             right: 0;
             top: 0;
         }
+
+        #v-rf-icon {
+            /* display: block; */
+            position: absolute;
+            margin:5%;
+            /* padding: 20%; */
+            left: 0;
+            top: 0;
+        }
+
         
         .topnav a:hover {
             /* background-color: #ddd; */
@@ -229,6 +280,14 @@ h3 {
             color: white;
             height:60px;
         }
+
+    .section-1 {
+        margin-top:-20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
     .image-1 {
       width: 120vw;

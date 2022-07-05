@@ -1,36 +1,53 @@
-let ham = document.getElementById("hamburger");
-let logo = document.getElementById("main_logo_holder");
+let ham = document.getElementById("v-hamburger");
+let s1 = document.getElementById("section-1");
+let s2 = document.getElementById("section-2");
+let s3 = document.getElementById("section-3");
 let bottomfooter = document.getElementById("foot");
 let nav = document.getElementById("topnav");
 let close = document.getElementById("ham_icon");
-let intro = document.getElementById("home_2");
-let slider = document.getElementById("gallery_slider");
+let vrf = document.getElementById("v-rf-icon");
+let hrf = document.getElementById("h-rf-icon");
 
-// image fade
-let slideIndex = 0;
 
 document.addEventListener("DOMContentLoaded", function(){
     console.log("laoded");
-    close.style.backgroundImage = "url('../assets/hamburger.png')";
+    ham.style.display = "none";
+    s1.style.display = "flex";
+    s2.style.display = "flex";
+    s3.style.display = "flex";
+    
+    vrf.style.display = "flex";
+    vrf.style.backgroundImage = "url('../assets/secondary-logo-stroke.png')";
+    vrf.style.backgroundSize = "cover";
+    vrf.style.backgroundRepeat = "no-repeat";
+    vrf.style.backgroundSize = "90%";
+
+
+    close.style.backgroundImage = "url('../assets/red-hamburger.png')";
+    close.style.backgroundSize = "cover";
     close.style.backgroundSize = "60%";
     close.style.backgroundRepeat = "no-repeat";
     close.style.margin = "6%";
     close.style.marginRight = "-2%";
-    // showSlides();
 });
-
 
 
 function hamburgerToggle() {
     
     if (ham.style.display === "block") {
         ham.style.display = "none";
-        logo.style.display = "block";
-        intro.style.display = "block";
-        slider.style.display = "block";
+        vrf.style.display = "flex";
+        vrf.style.backgroundImage = "url('../assets/secondary-logo-stroke.png')";
+        vrf.style.backgroundSize = "cover";
+        vrf.style.backgroundRepeat = "no-repeat";
+        vrf.style.backgroundSize = "90%";
+        s1.style.display = "flex";
+        s2.style.display = "flex";
+        s3.style.display = "flex";
         bottomfooter.style.display = "block";
         nav.style.backgroundColor = "transparent";
-        close.style.backgroundImage = "url('../assets/hamburger.png')";
+        close.style.backgroundImage = "url('../assets/red-hamburger.png')";
+        close.style.backgroundSize = "cover";
         close.style.backgroundSize = "60%";
         close.style.backgroundRepeat = "no-repeat";
         close.style.margin = "6%";
@@ -38,9 +55,10 @@ function hamburgerToggle() {
 
     } else {
         ham.style.display = "block";
-        logo.style.display = "none";
-        intro.style.display = "none";
-        slider.style.display = "none";
+        vrf.style.display = "none";
+        s1.style.display = "none";
+        s2.style.display = "none";
+        s3.style.display = "none";
         bottomfooter.style.display = "none";
         nav.style.backgroundColor = "#FEFBF4";
         close.style.backgroundImage = "url('../assets/close.png')";
@@ -52,26 +70,3 @@ function hamburgerToggle() {
 
     }
 }
-
-
-
-// showSlides();
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  console.log("testing");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-
-//
