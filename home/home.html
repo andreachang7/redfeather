@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,500&display=swap" rel="stylesheet">  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
     <title>Red Feather Home</title>
 
     <link rel="stylesheet" href="home.css" />
@@ -46,30 +47,29 @@
       </div>
     </div>
 
+
       <!-- Image Gallery & Logo -->
-      <div id="slider" class="slider">
+      <div id="slider">
         
         <!-- Logo -->
         <div id="v-main-logo-holder">
-           <!-- this div holds the logo image in the middle -->
-          <img src="../assets/red_feather_logo.png" width="828px" class="v-main-logo">
-        </div>
-
-        <div id="h-main-logo-holder">
           <!-- this div holds the logo image in the middle -->
-         <img src="../assets/desktop-logo.png" width="1920px" class="h-main-logo">
+         <img src="../assets/red_feather_logo.png" width="828px" class="v-main-logo">
        </div>
+
+       <div id="h-main-logo-holder">
+         <!-- this div holds the logo image in the middle -->
+        <img src="../assets/desktop-logo.png" width="1920px" class="h-main-logo">
+      </div>
         
         <!-- Image Gallery -->
         <span id="slide-1"></span>
         <span id="slide-2"></span>
         <span id="slide-3"></span>
-        <div id="image-gallery">
-          <div class="image-container">
-            <div class="slide" id="image-gallery-1"></div>
-            <div class="slide" id="image-gallery-2"></div>
-            <div class="slide" id="image-gallery-3"></div>
-          </div>
+        <div class="image-container">
+          <div class="slide" id="image-gallery-1"></div>
+          <div class="slide" id="image-gallery-2"></div>
+          <div class="slide" id="image-gallery-3"></div>
         </div>
         <div class="buttons">
           <a href="#slide-1"></a>
@@ -82,7 +82,6 @@
     <!-- Introduction -->
     <section id="section-2">
       <div id="home_2"><!-- originally home_1 & home_2 serves as sections but now not sure to remove it or not -->
-        
         <div id="intro-div">
           <h1 id="introtitle">Introduction</h1>
           <p id="introtxt">Red Feather sits in the heart of Greenwich village, close to the lively and beautiful Washington Square Park. The comfortable dining area will evoke a fun yet upscale atmosphere with beautiful colors and art pieces from the ceiling that will pair with the craftsmanship from the Chef and bartender.</p>
@@ -128,39 +127,42 @@
 </section>
 
 <!-- Footer -->
-<footer id="foot">
-  <div id="info" class="footerbox">
-    <div id="location">
-      <h3><a href="https://www.google.com/maps/dir/40.7633058,-73.9712484/82+W+3rd+St,+New+York,+NY+10012/@40.7461559,-74.0010818,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25991a2e3c931:0xbb0383d45867712f!2m2!1d-73.9989571!2d40.7297021" class="link-1" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">Location</a></h3>
-      <p>82 W 3rd St</p>
-      <p>New York, NY</p>
-      <p>10012</p>
-    </div>
 
-    <div id="hours" class="footerbox">
-      <h3>Hours</h3>
-      <p>Mon-Fri</p>
-      <p>11 am - 7 pm</p>
-      <p>Sat - Sun</p>
-      <p>10 am - 10 pm</p>
-    </div>
-
-    <div id="phone" class="footerbox">
-      <div id="phone">
-        <h3>Phone</h3>
-        <a href="tel:123-456-7890" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">(123) 456-7890</a>
-      </div>
-    </div>
-
-    <div id="social" class="footerbox">
-      <h3>Socials</h3>
-      <a target="_blank" href="https://www.instagram.com/redfeathernyc/" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);"><span id="instagram">ig</span> @redfeathernyc</a>
-      <br>
-      <br>
-      <a target="_blank" href="https://www.tiktok.com/@redfeathernyc" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);"><span id="tiktok">tk</span> @redfeathernyc</a>
-    </div> 
-  </div>
-</footer>
 
 </body>
+
+
+<footer id="foot">
+    <div id="info" class="footerbox">
+      <div id="location">
+        <h3><a href="https://www.google.com/maps/dir/40.7633058,-73.9712484/82+W+3rd+St,+New+York,+NY+10012/@40.7461559,-74.0010818,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c25991a2e3c931:0xbb0383d45867712f!2m2!1d-73.9989571!2d40.7297021" class="link-1" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">Location</a></h3>
+        <p>82 W 3rd St</p>
+        <p>New York, NY</p>
+        <p>10012</p>
+      </div>
+
+      <div id="hours" class="footerbox">
+        <h3>Hours</h3>
+        <p>Mon-Fri</p>
+        <p>11 am - 7 pm</p>
+        <p>Sat - Sun</p>
+        <p>10 am - 10 pm</p>
+      </div>
+
+      <div id="phone" class="footerbox">
+        <div id="phone">
+          <h3>Phone</h3>
+          <a href="tel:123-456-7890" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);">(123) 456-7890</a>
+        </div>
+      </div>
+
+      <div id="social">
+        <h3>Socials</h3>
+        <a target="_blank" href="https://www.instagram.com/redfeathernyc/" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);"><span id="instagram">ig</span> @redfeathernyc</a>
+        <br>
+        <br>
+        <a target="_blank" href="https://www.tiktok.com/@redfeathernyc" ontouchstart="" style="-webkit-tap-highlight-color: rgba(0,0,0,0);"><span id="tiktok">tk</span> @redfeathernyc</a>
+      </div> 
+    </div>
+</footer>
 </html>
